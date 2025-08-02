@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>About Me - CPU Scheduling Simulator</title>
+    <style>
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 1000px;
+            margin: 50px auto;
+            gap: 30px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .about-img {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-img img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-img img {
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">CPU Scheduling Simulator</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                    <li><a href="./Simulator/simulator.html">Simulator</a></li>
+                    <li><a href="./Path_visualizer/path.html">Path_visualizer</a></li>
+
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Me</h1>
+
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about-container" data-aos="fade-up">
+        <div class="about-text">
+            <h2>Hello, I'm Sagar SIngh Thayat</h2>
+            <p>
+                I am a final-year B.Tech CSE student with a deep passion for problem-solving and building innovative
+                solutions.
+                My expertise lies in Web Development, and UI/UX Design. I am always eager to learn and explore new.
+            </p>
+            <p>
+                I love transforming ideas into functional and efficient code, creating projects that make an impact.
+                My curiosity for technology and commitment to learning drive me to explore new areas and improve my
+                skills continuously.
+            </p>
+        </div>
+        <div class="about-img">
+            <img src="sagar.jpg" alt="Sagar Singh Thayat">
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/Sagarthayat"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sagar-singh-thayat/"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <p>Made By <i class="far fa-heart"></i> Sagar Singh Thayat</p>
+        <p>
+            <i class="fa fa-copyright"></i> Copyright 2025 || All rights reserved
+        </p>
+    </section>
+
+    <!-- For the animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 800
+        });
+    </script>
+</body>
+
+</html>
